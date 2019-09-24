@@ -7,4 +7,12 @@ $(document).ready(function() {
         pagination: false
     });
 
+    var typed = new Typed(".typed", {
+        strings: ["Volunteer.", "Student.", "Adventurer."],
+        loop: true,
+        typeSpeed: 85,
+        showCursor: false,
+        startDelay: 1000
+    }); 
+
 });
