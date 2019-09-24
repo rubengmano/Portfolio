@@ -1,0 +1,19 @@
+.slides-navigation a.prev,
+.slides-navigation a.next {
+    width: 47px;
+    height: 47px;
+    background-size: cover;
+    /* Don't repeat the image if it runs out of space */
+    background-repeat: no-repeat; 
+}
+
+.slides-navigation a.prev {
+    left: 20px;
+    background-image: url(../img/icons/previousButton.png);
+}
+
+.slides-navigation a.next {
+    right: 20px;
+    background-image: url(../img/icons/nextButton.png);
+}
+
