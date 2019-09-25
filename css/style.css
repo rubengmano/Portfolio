@@ -59,9 +59,22 @@
 
 .section {
     padding: 100px 0px;
-    background-color: seashell;
+    background-color: #ecf0f1;
 }
 
 .section .row .col-md-5 .aboutImage {
     max-width: 80%;
+}
+
+.skillsSection {
+    background-color: #3867d6;
+    color: white;
+}
+
+body{
+    font-size: 14px;
+    color: #333333;
+    background-color: #ecf0f1;
+    letter-spacing: 1px;
+
 }
