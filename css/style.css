@@ -57,3 +57,11 @@
     z-index: 6;
 }
 
+.section {
+    padding: 100px 0px;
+    background-color: seashell;
+}
+
+.section .row .col-md-5 .aboutImage {
+    max-width: 80%;
+}
