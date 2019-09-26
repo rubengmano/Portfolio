@@ -14,12 +14,16 @@
     <!-- Adding bootstrap cdn -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- Add reference to the style.css file -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
+    <!-- Adding font awesome -->
+    <script src="https://kit.fontawesome.com/1a68de2f34.js" crossorigin="anonymous"></script>
+    
     <!-- Adding jquery cdn -->
     <!-- jquery, this is the only script in the head for conflict reasons -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Add reference to the style.css file -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 <body>
     
@@ -125,7 +129,79 @@
                     </div>
                 </div>
             </div>
+    </div>
+
+    <!-- Adding Stats section -->
+    <div id="stats" class="statsSection section">
+        <!-- container is a class from bootstrap -->
+        <div class="container">
+            <!-- row is a class from bootstrap -->
+            <div class="row">
+
+                <!-- Element 1 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="squareItem">
+                        <div class="squareInnerContainer">
+                            <div class="squareIcon">
+                                <i class="fas fa-child"></i>
+                            </div>
+                            <div class="squareContent">
+                                <h2 class="count">1</h2>
+                                <h3>Volunteering</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Element 2 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="squareItem">
+                        <div class="squareInnerContainer">
+                            <div class="squareIcon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="squareContent">
+                                <h2 class="count">2</h2>
+                                <h3>Degrees</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Element 3 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="squareItem">
+                        <div class="squareInnerContainer">
+                            <div class="squareIcon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <div class="squareContent">
+                                <h2 class="count">5</h2>
+                                <h3>Languages</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Element 4 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="squareItem">
+                        <div class="squareInnerContainer">
+                            <div class="squareIcon">
+                                <i class="fas fa-flag"></i>
+                            </div>
+                            <div class="squareContent">
+                                <h2 class="count">10</h2>
+                                <h3>Countries</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </div>
 
     <!-- Adding reference to superslide js -->
     <script src="js/jquery.superslides.min.js"></script>
