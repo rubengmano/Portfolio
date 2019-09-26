@@ -72,6 +72,10 @@
     color: white;
 }
 
+.contactSection {
+    padding-bottom: 0px;
+}
+
 .skillsSection .par {
     margin: auto;
     width: 70%;
@@ -183,4 +187,46 @@ body{
     text-decoration: none;
     color: #3867d6;
     background-color: #fff;
+}
+
+
+.social{
+    text-align: center;
+    grid-column: span 1;
+}
+
+@media screen and (max-width: 2000px) {
+    .containerCSS {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding: 50px 50px;
+        padding-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .containerCSS {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 50px;
+    padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .containerCSS {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px 50px;
+    padding-bottom: 10px;
+    }
+}
+
+.socialLink {
+    color: white;
+}
+
+.socialLink:hover {
+    color: white;
 }
