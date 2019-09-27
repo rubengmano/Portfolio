@@ -6,6 +6,9 @@
 <head>
     <title> G Mano</title> <!-- Tab name -->
 
+    <!-- Reference to fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
     <!-- Reference the superslide css -->
     <link rel="stylesheet" type="text/css" href="css/superslides.css">
 
@@ -234,6 +237,138 @@
         </div>
     </div>
 
+    <!-- Adding Portfolio Section -->
+    <div id="portfolio" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="heading">
+                    <h2>Portfolio</h2>
+                </div>
+                <div class="filter">
+                    <!-- Unordered List -->
+                    <ul id="filters">
+                        <!-- class current is the selected item -->
+                        <li><a href="#" data-filter="*" class="current">ALL</a></li>
+                        <li><a href="#" data-filter=".apps">Apps</a></li>
+                        <li><a href="#" data-filter=".me" >Me</a></li>
+                        <li><a href="#" data-filter=".websites" >Websites</a></li>
+                    </ul>
+                </div>
+
+                <div class="itemsContainer">
+                    <ul class="items">
+                        <!-- xs - smartphone 2 columns -->
+                        <!-- sm - tables 3 columns -->
+                        <!-- md - desktop 4 columns -->
+                        <!-- lg - large desktop 4 columns -->
+                        <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="img/door_thumb.jpg">
+                                <div class="icons">
+                                    <a href="img/door.jpg" title="View Image" class="openButton" data-fancybox data-caption="Not a window but a door.">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <a href="" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li> 
+
+                        <li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="img/door_thumb.jpg">
+                                <div class="icons">
+                                    <a href="img/door.jpg" title="View Image" class="openButton" data-fancybox data-caption="Not a window but a door.">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <a href="" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li> 
+
+                        <li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="img/door_thumb.jpg">
+                                
+                                <div class="icons">
+                                    <a href="img/door.jpg" title="View Image" class="openButton" data-fancybox data-caption="Not a window but a door.">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <a href="" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li> 
+
+                        <li class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="img/door_thumb.jpg">
+                                
+                                <div class="icons">
+                                    <a href="img/door.jpg" title="View Image" class="openButton" data-fancybox data-caption="Not a window but a door.">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <a href="" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li> 
+
+                        <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="img/door_thumb.jpg">
+                                
+                                <div class="icons">
+                                    <a href="img/door.jpg" title="View Image" class="openButton" data-fancybox data-caption="Not a window but a door.">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <a href="" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li> 
+
+                        <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="img/door_thumb.jpg">
+                                
+                                <div class="icons">
+                                    <a href="img/door.jpg" title="View Image" class="openButton" data-fancybox data-caption="Not a window but a door.">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <a href="" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li> 
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Adding CopyRight Section -->
+
+    <div class="copyrightSection">
+        <div class="col-md-12 text-center">
+            <p>&copy; Copyright Ruben Mano 2019</p>
+        </div> 
+    </div>
 
 
 
@@ -259,12 +394,10 @@
 
 
 
+    <script src="js/isotope.pkgd.min.js"></script>
 
-
-
-
-
-
+    <!-- Adding fancybox.js cdn -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
     <!-- Adding reference to superslide js -->
     <script src="js/jquery.superslides.min.js"></script>

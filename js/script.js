@@ -80,6 +80,36 @@ $(document).ready(function() {
         }
     });
 
+    // Start fancyBox
+    $("[data-fancybox]").fancybox();
     
+    // Isotope
+    $(".items").isotope({
+        filter: '*',
+        animationOptions: {
+            duration: 1500,
+            easing: 'linear',
+            queue: false
+        }
+    });
+
+    // Select element filter a
+    $("#filters a").click(function() {
+        // remove the current class
+        $("#filters .current").removeClass("current");
+        // put the current class in the element clicked
+        $(this).addClass("current");
+
+        var selector = $(this).attr("data-filter");
+        $(".items").isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 1500,
+                easing: 'linear',
+                queue: false
+            }
+        });
+        return false;
+    });
 
 });
