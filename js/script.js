@@ -1,3 +1,22 @@
+// Loader
+$(window).on("load", function() {
+    // FadeOut the icon
+    $(".loader .inner").fadeOut(500, function() {
+        // FadeOut the background
+        $(".loader").fadeOut(750);
+    });
+
+    // Isotope
+    $(".items").isotope({
+        filter: '*',
+        animationOptions: {
+            duration: 1500,
+            easing: 'linear',
+            queue: false
+        }
+    });
+});
+
 // Load the slider after the whole page loads
 $(document).ready(function() {
 
@@ -82,16 +101,6 @@ $(document).ready(function() {
 
     // Start fancyBox
     $("[data-fancybox]").fancybox();
-    
-    // Isotope
-    $(".items").isotope({
-        filter: '*',
-        animationOptions: {
-            duration: 1500,
-            easing: 'linear',
-            queue: false
-        }
-    });
 
     // Select element filter a
     $("#filters a").click(function() {
